@@ -1,0 +1,6 @@
+0.通过myconfig.json配置债券基础信息路径，评估日，基础现金流路径，以及利率曲线的压力参数
+1.cashflow_cal,interest_curve_cal分别用于计算现金流和生成压力情景下的利率曲线
+1.1cashflow返回result_df, principal_result_df, coupon_result_df,分别是总现金流，本金现金流和票息现金流
+1.2interest_curve_cal返回monthly_df,包含基础情景，利率下，利率上三条折现率曲线
+2.mc_cal根据现金流和折现率曲线计算pv值（pv,pv_down,pv_up)导出excel表,beautify用于美化导出的excel表
+3.详细参数配置信息参考各py文件的注释
