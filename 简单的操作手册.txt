@@ -1,0 +1,14 @@
+# 查看状态
+git status  # 显示 new_file.txt 为红色
+
+# 添加文件
+git add new_file.txt
+
+# 提交更改
+git commit -m "添加新文件 new_file.txt"
+
+# 关联远程仓库（若尚未关联）
+git remote add origin https://github.com/你的用户名/你的仓库名.git
+
+# 推送
+git push -u origin main
